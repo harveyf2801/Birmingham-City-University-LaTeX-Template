@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "main.[^tp]*": true, 
+        "main.[^tp][^ed]*": true, 
+        "main.[^tp][^ed][^xf]*": true, 
+        "*.lol": true,
+        "bibs.*": true
+    },
+}

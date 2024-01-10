@@ -14,6 +14,19 @@
 \usepackage{lscape} % For including landscape pages where necessary
 \usepackage[all]{nowidow} % Increased penalty for widows and orphans
 
+% Extra packages included by Harvey Fretwell
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{multibib}
+\usepackage[nottoc,numbib]{tocbibind}
+% ====================
+
 % Section titles
 \usepackage{titlesec}
 \titleformat{\section}{\Huge\bfseries}{\thesection}{1em}{}
@@ -120,7 +133,8 @@
 }
 
 % Some commands to make notes and todo lists.
-\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage[xcdraw]{xcolor} % Edited by Harvey Fretwell to include table colouring
 \newcommand{\note}[1]{{\color{red}#1}}
 \newcommand{\todo}[1]{{\color{blue}#1}}
 
@@ -155,9 +169,7 @@
 			{\Large \@department}
 			
 			{\Large Faculty of Computing, Engineering and the Built Environment}
-			
-			{\Large School of Computing and Digital Technology}
-			
+						
 			{\Large Birmingham City University}
 			
 			{\Large Submitted \@date}

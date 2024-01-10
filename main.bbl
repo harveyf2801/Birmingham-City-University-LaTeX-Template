@@ -3,7 +3,7 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
-\bibitem[{Smith(1999)}]{smith1999an}
+\bibitem[{Smith(1999)}]{smith1999}
 Smith, F. (1999), An Awesome Paper about Fish, in \emph{The Conference of
   Really Cool Research}.
 

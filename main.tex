@@ -3,6 +3,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{BCUDissertation}
 
+% Adding multiple bibliography's
+% References.bib and Bibliography.bib
+% References: Used for cited references
+% Bibliography: used for papers read but not cited
+\newcites{bibs}{Bibliography}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Enter document details here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,7 +99,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \bibliographystyle{bcuharvard}
-\bibliography{bibl}
+\bibliography{references}
+
+\clearpage
+\bibliographystylebibs{bcuharvard}
+\bibliographybibs{bibliography}
+\nocitebibs{*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Appendices
@@ -136,14 +147,14 @@
             Once you've added sources to the biliography file you can use the \textit{\textbackslash citet} and \textit{\textbackslash citep} commands to cite them in your text:
         
             \begin{itemize}
-                \item \textit{\textbackslash citet} is for textual citations, e.g. ```\citet{smith1999an} did some cracking work about fish''.
-                \item \textit{\textbackslash citep} is for citations in parentheses , e.g. ```Fish like to live in the water \citep{smith1999an}''.
+                \item \textit{\textbackslash citet} is for textual citations, e.g. ```\citet{smith1999} did some cracking work about fish''.
+                \item \textit{\textbackslash citep} is for citations in parentheses , e.g. ```Fish like to live in the water \citep{smith1999}''.
             \end{itemize}
     
         \subsubsection{Inline Citations}
             Every so often it is necessary to put the full details of a reference in the main body of the report. You can use the \textit{\textbackslash bibentry} command for that, e.g.:
         
-            \bibentry{smith1999an}
+            \bibentry{smith1999}
 
     \subsection{Cross-References}
     \label{sec:CrossReferences}
