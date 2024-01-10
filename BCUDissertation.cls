@@ -142,6 +142,16 @@
 % Definition of title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
+\newcommand{\studentid}[1]
+{
+	\newcommand{\@studentid}{#1}
+}
+
+\newcommand{\module}[1]
+{
+	\newcommand{\@module}{#1}
+}
+
 \newcommand{\course}[1]
 {
 	\newcommand{\@course}{#1}
@@ -150,6 +160,11 @@
 \newcommand{\department}[1]
 {
 	\newcommand{\@department}{#1}
+}
+
+\newcommand{\wordcount}[1]
+{
+	\newcommand{\@wordcount}{#1}
 }
 
 \renewcommand{\maketitle}
@@ -163,9 +178,14 @@
 			{\bfseries \Huge \@title} \\
 			\vspace{3em}
 			{\huge \@author} \\
-			\vspace{7em}
-			{\Large \@course}
+			\vspace{2em}
+			{\Large Student ID: \@studentid} \\
+			\vspace{6em}
+
+			{\Large \@module}
 			
+			{\Large \@course}
+
 			{\Large \@department}
 			
 			{\Large Faculty of Computing, Engineering and the Built Environment}
@@ -175,7 +195,7 @@
 			{\Large Submitted \@date}
 			
 			\vspace*{\fill}
-			{\Large A thesis submitted to Birmingham City University in partial fulfilment of the requirements of the degree of Bachelor of Science.}
+			{\Large Word Count: \@wordcount}
 		\end{center}
 	\end{titlepage}
 }
