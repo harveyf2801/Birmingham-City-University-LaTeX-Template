@@ -147,6 +147,11 @@
 	\newcommand{\@studentid}{#1}
 }
 
+\newcommand{\recipient}[1]
+{
+	\newcommand{\@recipient}{#1}
+}
+
 \newcommand{\module}[1]
 {
 	\newcommand{\@module}{#1}
@@ -195,6 +200,8 @@
 			{\Large Submitted \@date}
 			
 			\vspace*{\fill}
+			{\Large Recipient: \@recipient}
+			
 			{\Large Word Count: \@wordcount}
 		\end{center}
 	\end{titlepage}

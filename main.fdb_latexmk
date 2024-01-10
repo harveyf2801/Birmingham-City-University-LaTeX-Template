@@ -1,22 +1,22 @@
 # Fdb version 4
-["bibtex bibs"] 1704912189.15051 "bibs.aux" "bibs.bbl" "bibs" 1704912349.21171 0
+["bibtex bibs"] 1704913671.68436 "bibs.aux" "bibs.bbl" "bibs" 1704913822.80506 0
   "./bcuharvard.bst" 1704908595 32722 04558c9d143448ee9eff7e79d5332f58 ""
   "./bibliography.bib" 1704909208 212 e8b76d868684cb5bfd3e5375eba12b56 ""
-  "bibs.aux" 1704912346 106 04ce7c5daca2da8bd1d51aaa0332284f "pdflatex"
+  "bibs.aux" 1704913821 106 04ce7c5daca2da8bd1d51aaa0332284f "pdflatex"
   (generated)
   "bibs.bbl"
   "bibs.blg"
   (rewritten before read)
-["bibtex main"] 1704912295.37349 "main.aux" "main.bbl" "main" 1704912349.21119 0
+["bibtex main"] 1704913675.65482 "main.aux" "main.bbl" "main" 1704913822.80449 0
   "./bcuharvard.bst" 1704908595 32722 04558c9d143448ee9eff7e79d5332f58 ""
   "./references.bib" 1704909217 180 ba7bc4ed3bf41539a30751e81ee6849a ""
-  "main.aux" 1704912346 5712 c4d9643049e609507a6fca1d5ab47836 "pdflatex"
+  "main.aux" 1704913821 5712 c4d9643049e609507a6fca1d5ab47836 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1704912344.82737 "c:/Users/hfret/Documents/GitHub/Projects/Birmingham-City-University-LaTeX-Template/main.tex" "main.pdf" "main" 1704912349.21211 0
-  "BCUDissertation.cls" 1704911821 6262 d850413dea03c768bd383ec9e689e4cc ""
+["pdflatex"] 1704913818.94932 "c:/Users/hfret/Documents/GitHub/Projects/Birmingham-City-University-LaTeX-Template/main.tex" "main.pdf" "main" 1704913822.80564 0
+  "BCUDissertation.cls" 1704913795 6370 03da83cb760456405a40746d1bb4a4e1 ""
   "C:/Users/hfret/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1704910121 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/hfret/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1704906385 24224934 81a8684d9c6f1853f77f7cbb5c600ea5 ""
   "C:/Users/hfret/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -172,23 +172,23 @@
   "Images/BCU.jpg" 1704908595 58222 e48ce49c11d0dc731ecafb90876e1521 ""
   "Images/a_graph.eps" 1704908595 32618 20fded91918d4bf4ba94bbb0ff0138d4 ""
   "Images/a_graph.jpg" 1704908595 43900 e7a90ecdb37c6a0e0235b37982fd8868 ""
-  "bibs.aux" 1704912346 106 04ce7c5daca2da8bd1d51aaa0332284f "pdflatex"
-  "bibs.bbl" 1704912189 305 a2084586e8ca92479ef988c11d0b5ff2 "bibtex bibs"
-  "bibs.brf" 1704912065 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "c:/Users/hfret/Documents/GitHub/Projects/Birmingham-City-University-LaTeX-Template/main.tex" 1704912248 13179 e6f1f9912f32d09412b24b93f984fb39 ""
+  "bibs.aux" 1704913821 106 04ce7c5daca2da8bd1d51aaa0332284f "pdflatex"
+  "bibs.bbl" 1704913672 305 a2084586e8ca92479ef988c11d0b5ff2 "bibtex bibs"
+  "bibs.brf" 1704913664 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "c:/Users/hfret/Documents/GitHub/Projects/Birmingham-City-University-LaTeX-Template/main.tex" 1704913817 13218 b4518c726a12463ecf175477c8fffee4 ""
   "conclusions.tex" 1704908595 366 0e5f2b5abd9fa8ebef6a83b13bfe9895 ""
-  "heading1.tex" 1704912094 62 8f474c8ba2da5cb77f2d3cd6941a5a68 ""
-  "heading2.tex" 1704912104 62 1f8ad3b37a019d014458d3e555262ab9 ""
-  "introduction.tex" 1704912343 1397 070ee888e901564839014f798d1e6567 ""
+  "heading1.tex" 1704913483 62 8f474c8ba2da5cb77f2d3cd6941a5a68 ""
+  "heading2.tex" 1704913483 62 1f8ad3b37a019d014458d3e555262ab9 ""
+  "introduction.tex" 1704913483 1397 070ee888e901564839014f798d1e6567 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1704912346 5712 c4d9643049e609507a6fca1d5ab47836 "pdflatex"
-  "main.bbl" 1704912295 301 9084533bf0c99a37ace5363f06046349 "bibtex main"
-  "main.brf" 1704912346 114 7107c68338fde92ce1a88294bcea13db "pdflatex"
-  "main.lof" 1704912346 236 d3ce81e6736901fa47a10ae50373ecd2 "pdflatex"
-  "main.lot" 1704912346 113 eb518a723894e0b0dfe8740b9755603d "pdflatex"
-  "main.out" 1704912346 3002 0ebd2ec1d58f07d57203f04bc360fd2e "pdflatex"
-  "main.tex" 1704912248 13179 e6f1f9912f32d09412b24b93f984fb39 ""
-  "main.toc" 1704912346 1901 bb402b3d97d8677d81836a92ef54535f "pdflatex"
+  "main.aux" 1704913821 5712 c4d9643049e609507a6fca1d5ab47836 "pdflatex"
+  "main.bbl" 1704913675 301 9084533bf0c99a37ace5363f06046349 "bibtex main"
+  "main.brf" 1704913821 114 7107c68338fde92ce1a88294bcea13db "pdflatex"
+  "main.lof" 1704913821 236 d3ce81e6736901fa47a10ae50373ecd2 "pdflatex"
+  "main.lot" 1704913821 113 eb518a723894e0b0dfe8740b9755603d "pdflatex"
+  "main.out" 1704913821 3002 0ebd2ec1d58f07d57203f04bc360fd2e "pdflatex"
+  "main.tex" 1704913817 13218 b4518c726a12463ecf175477c8fffee4 ""
+  "main.toc" 1704913821 1901 bb402b3d97d8677d81836a92ef54535f "pdflatex"
   (generated)
   "bibs.aux"
   "main.acn"
