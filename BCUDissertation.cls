@@ -142,21 +142,6 @@
 % Definition of title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
-\newcommand{\studentid}[1]
-{
-	\newcommand{\@studentid}{#1}
-}
-
-\newcommand{\dissertationsection}[1]
-{
-	\newcommand{\@dissertationsection}{#1}
-}
-
-\newcommand{\module}[1]
-{
-	\newcommand{\@module}{#1}
-}
-
 \newcommand{\course}[1]
 {
 	\newcommand{\@course}{#1}
@@ -165,11 +150,6 @@
 \newcommand{\department}[1]
 {
 	\newcommand{\@department}{#1}
-}
-
-\newcommand{\superviser}[1]
-{
-	\newcommand{\@superviser}{#1}
 }
 
 \renewcommand{\maketitle}
@@ -183,17 +163,9 @@
 			{\bfseries \Huge \@title} \\
 			\vspace{3em}
 			{\huge \@author} \\
-			\vspace{2em}
-
-			{\Large \@dissertationsection}
-
-			{\Large \@module}
-
-			{\Large Individual Undergraduate Project 2023-2024}
-			\vspace{2em}
-			
+			\vspace{7em}
 			{\Large \@course}
-
+			
 			{\Large \@department}
 			
 			{\Large Faculty of Computing, Engineering and the Built Environment}
@@ -203,10 +175,7 @@
 			{\Large Submitted \@date}
 			
 			\vspace*{\fill}
-			{\Large Student ID: \@studentid} \\
-			\vspace{1em}
-			{\Large Superviser: \@superviser}
-			
+			{\Large A thesis submitted to Birmingham City University in partial fulfilment of the requirements of the degree of Bachelor of Science.}
 		\end{center}
 	\end{titlepage}
 }
