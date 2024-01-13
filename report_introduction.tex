@@ -1,20 +1,85 @@
 \section{Report Introduction}
     \note{Here you will state what the report is about. This is about the literature review and methods, NOT the project as a whole. Do not begin with 'This project…' but rather, 'This report…'. Provide context, similar to the proposal rationale, in that you will say what you intend to do and why. Provide a clear structure of your report. This should not be very long and should provide a roadmap of what is included in the remainder of the report.}
 
+    This report aims to conduct a thorough literature review on phase alignment techniques, with a specific focus on neural network approaches. Providing a critical analysis of the strengths and limitations present in existing literature, delving into advancements in audio-based neural networks and their applications.
+    
+    Various methods, including \acrfull{ddsp}, \acrfull{gan}s, and black-box modelling with \acrfull{rnn}, will be discussed. Additionally, traditional \acrfull{dsp} approaches, such as manual alignment, all-pass filters, and cross-correlation, will be explored.
+    
+    The objective is to discern the most effective approach, capitalising on the adaptive capabilities of neural networks. This insight will inform the development of the proposed real-time "smart phase" tool.
+
     \subsection{Aim and Objectives}
         \note{Update your aim and objectives of the project with modifications generated from the feedback as provided by your supervisor. List objectives with modifications if applicable and agreed with your supervisor. Objectives should be SMART and together meet the overall aim of the project. Objectives do not relate to the academic processes of the module, but to the problem or area of investigation.}
 
         \subsubsection{Project Aim}	
-            This project aims to provide a comparative analysis of the effectiveness of DNN methods against traditional DSP techniques for automatic phase alignment of audio signals.
+            This project aims to compare the efficacy of a novel \acrfull{dnn} approach in comparison to traditional \acrshort{dsp} techniques for automatic phase alignment of audio signals.
 
         \subsubsection{Project Objectives}
         \begin{itemize}
-            \item{Research and evaluate various traditional DSP techniques for auto-phase alignment.}
-            \item{Design auto-phase alignment filter algorithms in Python using these DSP methods.}
-            \item{Prepare a training dataset of unaligned and aligned audio for supervised learning, utilising data synthesis and augmentation.}
-            \item{Develop and train a DNN model using Python, TensorFlow and DDSP to create a real-time auto-phase alignment filter which takes a reference and a single input signal to align.}
-            \item{Evaluate a novel DNN model approach against existing traditional DSP algorithms.}
+            \item{Review traditional \acrshort{dsp} techniques and contemporary neural network approaches for phase alignment.}
+            \item{Design conventional auto-phase alignment algorithms in Python using \acrshort{dsp} methods to conduct comparative analysis with the \acrshort{dnn} model.}
+            \item{Prepare a training dataset for supervised learning, incorporating unaligned and aligned audio, utilising data synthesis, augmentation and \acrfull{dr} techniques.}
+            \item{Develop, train and fine-tune a \acrshort{dnn} model using Python and \acrshort{ddsp} to create a real-time auto-phase alignment filter, which takes a reference and a single input signal to align.}
+            \item{Evaluate the performance of a novel \acrshort{dnn} model approach against standard \acrshort{dsp} algorithms.}
         \end{itemize}
 
     \subsection{Literature Search Methodology}
         \note{Provide an updated list of the search terms used in the literature review, including the various topics and themes your project covers, and library databases used.}
+
+        \begin{longtable}[H]{|p{0.3\linewidth}|p{0.3\linewidth}|p{0.3\linewidth}|}
+            \hline
+            Search Term &
+              Search Engine &
+              Comments \\ \hline
+            \endfirsthead
+            %
+            \endhead
+            %
+            (Audio) "Phase Correction",\newline
+            (Audio) "Phase Compensation",\newline
+            (Audio) "Phase Alignment" &
+              IEEE Xplore,\newline
+              Google Scholar,\newline
+              \acrshort{dafx},\newline
+              ACM Digial Library &
+              Helped with finding various traditional \acrshort{dsp} methods for phase alignment. When searching on \acrshort{ddsp} papers showed on using differentiable all-pass filters to align phase in a neural network. \\ \hline
+            "Automated Mixing",\newline
+            "Automatic Mixing" &
+              Google Scholar &
+              This presented many papers by J Reiss and R Stables such as "Ten years of automatic mixing". Although many of their papers present post-production techniques, this provided some useful starting points. \\ \hline
+            (Automated) "Audio Pre-production" &
+              Google Scholar,\newline
+              Google &
+              Although this did not show any "automated" approaches it gave a good outline of typical audio pre-production principles. \\ \hline
+            "Audio Digital Signal Processing" &
+              Google Scholar,\newline
+              \acrshort{ddsp} &
+              Provided various books and papers on \acrshort{dsp} effects and how to implement them such as all-pass filters and explanations of \acrshort{fft}s, \acrshort{stft}s and various transforms such as the Hilbert transform, and Wavelet transform. \\ \hline
+            "Machine Learning for Audio",\newline
+            "Deep Learning for Audio" &
+              Google Scholar,\newline
+              Google,\newline
+              BCU Summons &
+              Used to find out the most up-to-date libraries and models for deep learning with audio. Some past papers in the BCU library were found that used \acrshort{ml} with audio. \\ \hline
+            "WaveNet",\newline
+            "WaveRNN",\newline
+            "WaveGANN" &
+              Google Scholar &
+              To get a better understanding of what these models do, how they work and why these models would not work in this project. \\ \hline
+            "\acrshort{ddsp}" &
+              Google,\newline
+              Google Scholar &
+              Conferences were found on YouTube explaining \acrshort{ddsp} and how to implement it with \acrshort{juce} as a \acrshort{vst} plugin. The GitHub repository has various audio examples and code demonstrations. The \acrshort{ddsp} paper was used to understand the models' capabilities and how they can relate to this project. Looking through the references and bibliography of this paper gave some related projects using \acrshort{ddsp} that may help. \\ \hline
+            "Differentiable IIR Filters",\newline
+            "Differentiable IIR Filters Machine Learning" &
+              Google,\newline
+              Google Scholar,\newline
+              IEEE Xplore,\newline
+              \acrshort{ddsp} &
+              Using these search terms provided papers that used parameterized differentiable filters for audio EQs. This can be implemented further with all-pass filters to control phase characteristics. This also provided information on \acrshort{va} applications. \\ \hline
+            "Audio black-box modelling" &
+              Google,\newline
+              Google Scholar,\newline
+              IEEE Xplore,\newline
+              \acrshort{ddsp} &
+              These searches provided great information on setting up black box modelling for audio effects with \acrshort{rnn} networks which could be useful when implementing the custom "phase alignment" effect. \\ \hline
+            \end{longtable}
