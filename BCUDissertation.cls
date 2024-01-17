@@ -66,7 +66,9 @@
 
 \newcommand{\listofacronyms}{
     \renewcommand{\section}{\clearpage\vspace*{50pt}\nospacesection}
-    \printglossary[type=\acronymtype, nopostdot, nonumberlist, style=alttree]
+    % \printnoidxglossaries[type=\acronymtype, nopostdot, nonumberlist, style=alttree]
+	\printnoidxglossary[type=\acronymtype,title=Acronyms, nopostdot, nonumberlist, style=alttree]
+	\printnoidxglossary[title=Glossary]
     \renewcommand{\section}{\clearpage\nospacesection}
 }
 
@@ -116,7 +118,7 @@
 
 % Glossaries
 \usepackage[acronym, toc]{glossaries}
-\makeglossaries
+\makenoidxglossaries
 
 % Cross-referencing
 \usepackage{cleveref} % Simple cross-referencing for sections, figures, etc.
