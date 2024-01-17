@@ -1,6 +1,6 @@
 \ProvidesClass{BCUDissertation}
 \LoadClass[a4paper, 12pt]{article}
-
+\usepackage[xcdraw]{xcolor}
 % I like a sans-serif font. If you want to go back to the regular latex font just remove this line.
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -25,6 +25,7 @@
 \usepackage{pdfpages}
 \usepackage{multibib}
 \usepackage[nottoc,numbib]{tocbibind}
+\usepackage[automake,acronym, nonumberlist]{glossaries-extra}
 % ====================
 
 % Section titles
@@ -66,9 +67,9 @@
 
 \newcommand{\listofacronyms}{
     \renewcommand{\section}{\clearpage\vspace*{50pt}\nospacesection}
-    % \printnoidxglossaries[type=\acronymtype, nopostdot, nonumberlist, style=alttree]
-	\printnoidxglossary[type=\acronymtype,title=Acronyms, nopostdot, nonumberlist, style=alttree]
-	\printnoidxglossary[title=Glossary]
+    \printglossary[type=\acronymtype, nopostdot, nonumberlist, style=alttree]
+	% \printnoidxglossary[type=\acronymtype,title=Acronyms, nopostdot, nonumberlist, style=alttree, automake=immediate]
+	% \printnoidxglossary[title=Glossary, automake=immediate]
     \renewcommand{\section}{\clearpage\nospacesection}
 }
 
@@ -117,8 +118,9 @@
 }
 
 % Glossaries
-\usepackage[acronym, toc]{glossaries}
-\makenoidxglossaries
+\usepackage[acronym, nonumberlist, toc]{glossaries}
+\makeglossary
+% \makenoidxglossaries
 
 % Cross-referencing
 \usepackage{cleveref} % Simple cross-referencing for sections, figures, etc.
@@ -136,7 +138,7 @@
 
 % Some commands to make notes and todo lists.
 \usepackage{colortbl}
-\usepackage[xcdraw]{xcolor} % Edited by Harvey Fretwell to include table colouring
+
 \newcommand{\note}[1]{{\color{red}#1}}
 \newcommand{\todo}[1]{{\color{blue}#1}}
 
@@ -144,6 +146,21 @@
 % Definition of title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
+\newcommand{\studentid}[1]
+{
+	\newcommand{\@studentid}{#1}
+}
+
+\newcommand{\dissertationsection}[1]
+{
+	\newcommand{\@dissertationsection}{#1}
+}
+
+\newcommand{\module}[1]
+{
+	\newcommand{\@module}{#1}
+}
+
 \newcommand{\course}[1]
 {
 	\newcommand{\@course}{#1}
@@ -152,6 +169,11 @@
 \newcommand{\department}[1]
 {
 	\newcommand{\@department}{#1}
+}
+
+\newcommand{\superviser}[1]
+{
+	\newcommand{\@superviser}{#1}
 }
 
 \renewcommand{\maketitle}
@@ -165,9 +187,17 @@
 			{\bfseries \Huge \@title} \\
 			\vspace{3em}
 			{\huge \@author} \\
-			\vspace{7em}
-			{\Large \@course}
+			\vspace{2em}
+
+			{\Large \@dissertationsection}
+
+			{\Large \@module}
+
+			{\Large Individual Undergraduate Project 2023-2024}
+			\vspace{2em}
 			
+			{\Large \@course}
+
 			{\Large \@department}
 			
 			{\Large Faculty of Computing, Engineering and the Built Environment}
@@ -177,7 +207,10 @@
 			{\Large Submitted \@date}
 			
 			\vspace*{\fill}
-			{\Large A thesis submitted to Birmingham City University in partial fulfilment of the requirements of the degree of Bachelor of Science.}
+			{\Large Student ID: \@studentid} \\
+			\vspace{1em}
+			{\Large Superviser: \@superviser}
+			
 		\end{center}
 	\end{titlepage}
 }
